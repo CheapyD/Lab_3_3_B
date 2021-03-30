@@ -1,5 +1,10 @@
 #include "FuzzyNumber.h"
 
+FuzzyNumber makeFuzzyNumber(FuzzyNumber c)
+{
+	return c;
+}
+
 int main()
 {
 	FuzzyNumber N(4, 1, 7), M;
@@ -20,6 +25,9 @@ int main()
 	FuzzyNumber D = N * M;
 	cout << "D:" << endl;
 	cout << D << endl;
+
+	FuzzyNumber L = makeFuzzyNumber(D);
+	cout << L << endl;
 
 	cout << "++M: " << endl;
 	cout << ++M << endl;
